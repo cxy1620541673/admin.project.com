@@ -1,7 +1,10 @@
 $(function(){
 
-	// 初始化编辑器
+	var time = '';
 	var editor;
+	$('.portlet-title .tips').hide();
+
+	// 初始化编辑器
 	KindEditor.ready(function(K){
 		editor = K.create('#t_content', {
 			width			: '100%',
@@ -13,6 +16,10 @@ $(function(){
 			afterChange 	: function(){
 				K.sync('#t_content');
 			},
+			afterBlur		: function() {
+				clearTimeout(time);
+				save();
+			}
 		});
 		$('.ke-container').hide();
 	});
@@ -41,29 +48,34 @@ $(function(){
 		}
 	});
 
-	// 自动保存
-	$('.portlet-title .tips').hide();
-	function autosave() {
+	// 保存
+	function save() {
 		var data = {};
 		var $form = $('#edittaskstep-form');
 		var url = $form.attr('action');
 		var $formdata = $form.find('.form-control');
 		var $tips = $('.portlet-title .tips');
-		setTimeout(function(){
-			$formdata.each(function() {
-				data[$(this).attr('name')] = $(this).val();
-			});
-			$.post( url, data, function(d){
-				if (d.status) {
-					$tips.text('自动保存成功...');
-					$tips.show(1000);
-					setTimeout(function(){
-						$tips.hide(1000);
-						$tips.text('');
-					}, 10000);
-				};
-			}, 'json' );
-			autosave();
+		$formdata.each(function() {
+			data[$(this).attr('name')] = $(this).val();
+		});
+		$.post( url, data, function(d){
+			if (d.status) {
+				$tips.text('自动保存成功...');
+				$tips.show(1000);
+				setTimeout(function(){
+					$tips.hide(1000);
+					$tips.text('');
+				}, 10000);
+			};
+		}, 'json' );
+		clearTimeout(time);
+		autosave();
+	}
+
+	// 自动保存
+	function autosave() {
+		time = setTimeout(function(){
+			save();
 		}, 300000);
 	}
 	autosave();
