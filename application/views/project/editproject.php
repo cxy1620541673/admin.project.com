@@ -52,7 +52,7 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-2">
-			<a href="/Project/ListProject"><button type="button" class="btn btn-warning">取消</button></a>
+			<a href="/Project/ListProject" class="btn btn-warning">取消</a>
 			<button type="button" class="btn btn-success sm-btn" data-formid="editproject-form">修改</button>
 		</div>
 	</div>

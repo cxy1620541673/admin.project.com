@@ -74,7 +74,7 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-3 col-sm-2">
-			<a href="/Authority/ListAuth"><button type="button" class="btn btn-warning">取消</button></a>
+			<a href="/Authority/ListAuth" class="btn btn-warning">取消</a>
 			<button type="button" class="btn btn-success sm-btn" data-formid="addauth-form">添加</button>
 		</div>
 	</div>

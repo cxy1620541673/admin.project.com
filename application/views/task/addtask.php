@@ -108,9 +108,9 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-1 col-sm-2">
-			<a href="/Task/ListTask"><button type="button" class="btn btn-warning">取消</button></a>
+			<a href="/Task/ListTask" class="btn btn-warning">取消</a>
 			<button type="button" class="btn btn-success sm-btn" data-formid="addtask-form">添加</button>
-			<button type="button" class="btn btn-primary solution-btn">查看解决方案</button>
+			<!-- <button type="button" class="btn btn-primary solution-btn">查看解决方案</button> -->
 		</div>
 	</div>
 </form>

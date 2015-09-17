@@ -35,7 +35,7 @@
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-6 col-sm-9">
-				<a href="/Index"><button type="button" class="btn btn-warning">放弃修改</button></a>
+				<a href="/Index" class="btn btn-warning">放弃修改</a>
 				<button type="button" id="submit-btn" class="btn btn-success">修改密码</button>
 			</div>
 		</div>

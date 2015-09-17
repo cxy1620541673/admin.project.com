@@ -50,7 +50,7 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-4 col-sm-2">
-			<a href="/Admin/ListAdmin"><button type="button" class="btn btn-warning">取消</button></a>
+			<a href="/Admin/ListAdmin" class="btn btn-warning">取消</a>
 			<button type="button" class="btn btn-success sm-btn" data-formid="editadmin-form">修改</button>
 		</div>
 	</div>

@@ -39,7 +39,7 @@
 				<tr>
 					<th width="100px">等级名称</th>
 					<th width="46px">等级</th>
-					<th>根权限</th>
+					<th width="150px">根权限</th>
 					<th>菜单权限</th>
 					<th>页面权限</th>
 					<th>操作权限</th>

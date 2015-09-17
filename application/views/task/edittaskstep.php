@@ -50,7 +50,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="col-xs-offset-5 col-md-7">
-									<a href="/Task/ListTask"><button type="button" class="btn btn-warning">返回列表</button></a>
+									<a href="/Task/ListTask" class="btn btn-warning">返回列表</a>
 									<button type="button" class="btn btn-primary edit-btn">进入编辑</button>
 									<button type="button" class="btn btn-success sm-btn" data-formid="edittaskstep-form">保存修改</button>
 								</div>

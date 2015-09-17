@@ -60,7 +60,7 @@ class Task extends PW_Controller {
 		$condition['order_by']	=	't_create_time DESC';
 
 		// 获取数据
-		$status	=	array( '未指派','已指派未开始','正在进行','已完成','放弃任务' );
+		$status	=	array( '未指派','已指派未开始','正在进行','已完成','上线','放弃任务' );
 		$executor	=	$this->adminmodel->GetAllAdmin();
 		$executorArr	=	array();
 		foreach ($executor as $val) {
