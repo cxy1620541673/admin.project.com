@@ -61,8 +61,8 @@
 				<div id="table_show_record" class="dataTables_length">
 					<label>
 						<select id="pagesize" size="1" aria-controls="sample_editable_1">
-							<option value="5" selected="selected">5</option>
-							<option value="10">10</option>
+							<option value="5">5</option>
+							<option value="10" selected="selected">10</option>
 							<option value="15">15</option>
 							<option value="20">20</option>
 							<option value="-1">所有</option>
@@ -77,9 +77,11 @@
 					<!-- <th><input type="checkbox" class="select-all"/></th> -->
 					<th>任务ID</th>
 					<th>任务标题</th>
+					<th>模块</th>
 					<th>执行者</th>
 					<th>开始时间</th>
-					<th>结束时间</th>
+					<th>代码完成时间</th>
+					<th>上线时间</th>
 					<th>状态</th>
 					<th>创建时间</th>
 					<th>操作</th>
