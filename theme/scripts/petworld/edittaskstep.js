@@ -17,8 +17,8 @@ $(function(){
 				K.sync('#t_content');
 			},
 			afterBlur		: function() {
-				clearTimeout(time);
-				save();
+				// clearTimeout(time);
+				// save();
 			}
 		});
 		$('.ke-container').hide();
